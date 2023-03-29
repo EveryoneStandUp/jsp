@@ -7,19 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-java.util.Calendar cal = java.util.Calendar.getInstance();
-%>
-오늘은
-<%= cal.get(java.util.Calendar.YEAR) %>년
-<%= cal.get(java.util.Calendar.MONTH) + 1 %>월
-<%= cal.get(java.util.Calendar.DATE) %>일
-
+	<h1>19from.jsp</h1>
+<!-- 	<form action="/jsp/ch03/lecture/06form/20to.jsp"> -->
+	<form action="20to.jsp">
+		<input type="text" name="param1" />
+		<input type="submit" value="전송" />
+	</form>
 </body>
 </html>
-
-
-
 
 
 

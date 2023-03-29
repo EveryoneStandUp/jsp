@@ -7,20 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-java.util.Calendar cal = java.util.Calendar.getInstance();
-%>
-오늘은
-<%= cal.get(java.util.Calendar.YEAR) %>년
-<%= cal.get(java.util.Calendar.MONTH) + 1 %>월
-<%= cal.get(java.util.Calendar.DATE) %>일
-
+	<h1>name : <%= request.getParameter("name")%></h1>
+	<h1>age : <%= request.getParameter("age")%></h1>
 </body>
 </html>
-
-
-
-
 
 
 
