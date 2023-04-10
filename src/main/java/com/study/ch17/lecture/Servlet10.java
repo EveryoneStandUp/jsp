@@ -1,10 +1,10 @@
 package com.study.ch17.lecture;
 
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
 /**
@@ -42,7 +42,7 @@ public class Servlet10 extends HttpServlet {
 		String name = request.getParameter("name");
 		
 		// business logic
-		// 데이터베이스 이름 추가 (session 으로 간단히 흉내)
+		// 데이터베이스에 이름 추가 (session 으로 간단히 흉내)
 		HttpSession session = request.getSession();
 		Object o = session.getAttribute("db");
 		if (o == null) {
